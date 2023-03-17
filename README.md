@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  Checked server logs found 500 server error Toys was unitialized instead used Toy
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  Checked console saw Json end of input error checked the fetch request was using response but controller update method was not returning response so added response
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  Error 404 in console so checked network in console saw noroute matching DELETE so added route in the config routes
